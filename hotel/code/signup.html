@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <title>sign up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="major">
+      <div class="form">
+        <div class="btn_box">
+          <div id="Button"></div>
+          <button type="button" class="tog_btn" onclick="login()">
+            log in
+          </button>
+          <button type="button" class="tog_btn" onclick="register()">
+            register
+          </button>
+        </div>
+        <div class="icons">
+          <img src="../images/gp.png" alt="" />
+          <img src="../images/fb.png" alt="" />
+          <img src="../images/tw.png" alt="" />
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input_f" placeholder="user id" required />
+          <input
+            type="password "
+            class="input_f"
+            placeholder="enter password"
+            required
+          />
+          <input type="checkbox" class="check" />
+          <span id="edit">remember password</span>
+          <button type="submit" class="submit_b">log in</button>
+        </form>
+        <form id="register" class="input-group">
+          <input type="text" class="input_f" placeholder="user id" required />
+          <input
+            type="text"
+            class="input_f"
+            placeholder="create password"
+            required
+          />
+          <input
+            type="text"
+            class="input_f"
+            placeholder="enter your email address"
+            required
+          />
+          <input type="checkbox" class="check" /><span id="edit"
+            >i agree to the terms</span
+          >
+          <button type="submit" class="submit_b">register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="event.js"></script>
+  </body>
+</html>

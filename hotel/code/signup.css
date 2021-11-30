@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.major {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(75, 73, 73, 0.63),
+      rgba(66, 65, 65, 0.575)
+    ),
+    url("../images/pics.png");
+  background-size: cover;
+  position: absolute;
+}
+.form {
+  width: 380px;
+  height: 400px;
+  position: relative;
+  margin: 6% auto;
+  background: rgba(255, 255, 255, 0.479);
+  padding: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.btn_box {
+  width: 200px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px rgba(255, 99, 71, 0.39);
+  border-radius: 30px;
+  
+}
+.tog_btn {
+  padding: 10px 27px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#Button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 153, 0, 0.534),
+    rgba(0, 255, 98, 0.603)
+  );
+  transition: 0.5s;
+}
+
+.icons {
+  margin: 30px auto;
+  text-align: center;
+}
+.icons img {
+  width: 30px;
+  margin: 0 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 #999;
+}
+.input-group {
+  margin: 0px 30px;
+  top: 180px;
+  width: 280px;
+  position: absolute;
+  transition: 0.5s;
+}
+.input_f {
+  width: 100%;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+  margin: 6px 0;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+}
+.submit_b {
+  width: 85%;
+  margin: 10px auto;
+  display: block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 153, 0, 0.534),
+    rgba(0, 255, 98, 0.603)
+  );
+}
+.check {
+  margin: 10px 10px 20px 0;
+}
+#edit {
+  font-size: 17px;
+  font-family: monospace;
+  font-weight: bold;
+}
+#login {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}

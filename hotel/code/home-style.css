@@ -1,0 +1,94 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(75, 72, 72, 0.877),
+      rgba(136, 134, 134, 0.411)
+    ),
+    url("../images/tebs_1.jpeg");
+  background-size: cover;
+}
+.search {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.search-bar {
+  height: 30px;
+  width: 400px;
+  margin: 0px 0px 100px 90px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.404);
+  font-style: italic;
+  box-shadow: none;
+  cursor: default;
+  transform: none;
+  transition: 0.5s;
+  position: relative;
+}
+.search-bar:hover {
+  box-shadow: 5px 5px 5px 4px rgba(182, 255, 227, 0.137);
+  transform: translate(3%, 3%);
+}
+.names {
+  font-size: 19px;
+  font-weight: lighter;
+  font-family: monospace;
+  text-transform: capitalize;
+  text-justify: newspaper;
+  padding: 150px;
+  display: justify;
+  color: rgba(255, 254, 254, 0.582);
+  text-shadow: black;
+}
+
+.nav {
+  flex: 1;
+  text-align: right;
+}
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  padding: 15px 10px;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(221, 208, 181, 0.836);
+  border: rgba(165, 42, 42, 0.521) 1px solid;
+  padding: 5px 5px;
+  background: transparent;
+  border-radius: 20px;
+}
+.nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.308);
+}
+.icons {
+  position: absolute;
+  border: none;
+  margin: 290px 95%;
+  background: transparent;
+}
+.icons:hover {
+  background: rgba(255, 99, 71, 0.397);
+  border: rgb(122, 207, 129) 1px solid;
+  transform: translate(-4%, -5%);
+}
+.icons img {
+  width: 40px;
+  margin: 5px 5px;
+  padding: 5px 0px;
+}

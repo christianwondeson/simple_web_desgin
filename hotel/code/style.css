@@ -5,35 +5,114 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-image: linear-gradient(
       to left,
-      rgba(68, 67, 67, 0.918),
-      rgba(70, 70, 70, 0.842)
+      rgba(68, 67, 67, 0.842),
+      rgba(70, 70, 70, 0.897)
     ),
-    url("../pics.png");
+    url("../images/pics.png");
+  height: 100%;
+  width: 100%;
   background-size: cover;
 }
-#head {
-  padding-top: 3%;
-  font-size: 27px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: capitalize;
-  color: rgb(133, 133, 133);
-  background: none;
+.order #desc {
+  color: transparent;
+  background: transparent;
+  outline: none;
+  transition: 0.5s;
+  font: bold;
+  font-size: 15px;
+  color: none;
+  border:none;
+  text-align: justify;
+  position: relative;
+
 }
-#head::after {
+.order #desc:hover{
+  color: tomato;
+  border: 1px solid rgba(255, 255, 0, 0.342);
+}
+.main ul {
+  flex: 1;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.main ul li {
+  list-style: none;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+.main ul li a {
+  background-color: whitesmoke;
+  margin-left: 15px;
+  border:none;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: monospace;
+  transition: 0.5s;
+}
+.main ul li a:hover
+{
+  border: 1.5px solid rgba(235, 232, 48, 0.288);
+}
+.main #head {
+  width: 10%;
+  height: 3%;
+  padding-top: 3%;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+  color: rgba(137, 187, 132, 0.692);
+  background: none;
+  margin-left: 45%;
+}
+
+.main #head::after {
   content: "";
   width: 0px;
   height: 10px;
   background: rgba(255, 68, 0, 0.726);
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
   top: -5px;
-  cursor:crosshair;
+  cursor: pointer;
   transition: 0.5s;
   border-radius: 20px;
+  margin-left: -40px;
 }
-#head:hover::after {
-  
+.main #head:hover::after {
   width: 75px;
-  
+}
+.order {
+  align-items: baseline;
+  background-size: contain;
+  height: 22%;
+  width: 15%;
+  background-origin: border-box;
+  background-repeat: none;
+  margin-top: -39%;
+  margin-left: 20px;
+}
+.order img {
+  border: 3px solid tomato;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: none;
+}
+.order img:hover {
+  position: relative;
+  transform: translate(-10px, -5px);
+  box-shadow: 5px 10px rgba(255, 99, 71, 0.712);
+}
+.beverage {
+  position: relative;
+  right: -551%;
+  top: -510%;
+}
+.beverage img {
+  margin-left: -20px;
 }
