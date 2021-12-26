@@ -138,12 +138,14 @@ section {
 .about,
 .services,
 .skills,
-.teams {
+.teams,
+.contact {
   font-family: "poppins", sans-serif;
 }
 .services .serv-content,
 .about .about-content,
-.skills .skills-content {
+.skills .skills-content,
+.contact .contact-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,12 +233,13 @@ section .title::after {
   transform: translate(5%, -5%);
 }
 /*services section styling*/
-.services ,.teams {
+.services,
+.teams {
   color: antiquewhite;
   background: #111;
 }
-.services .title::before ,
-.teams .title::before{
+.services .title::before,
+.teams .title::before {
   background: antiquewhite;
 }
 .services .title::after {
@@ -359,87 +362,185 @@ section .title::after {
 }
 
 /*team section styling*/
- .teams .title::after
- {
-   content: "who is with me";
- }
- .teams .carousel .card
- {
-   background:#222;
-   border-radius: 6px;
-   padding: 25px 35px;
-   text-align: center;
-   transition: all 0.5s ease-in-out;
-
- }
- .teams .carousel .card:hover
- {
-   background: rgba(255, 99, 71, 0.582);
- }
- /*align the hole items */
- .teams .carousel .card .box
- {
-   display: flex;
-   flex-direction:column;
-   align-items: center;
-   justify-content:center;
-   transition: .5s ease;
- }
- /*it only scale our image and text*/
- .teams .carousel .card:hover .box
- {
+.teams .title::after {
+  content: "who is with me";
+}
+.teams .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.teams .carousel .card:hover {
+  background: rgba(255, 99, 71, 0.582);
+}
+/*align the hole items */
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+/*it only scale our image and text*/
+.teams .carousel .card:hover .box {
   transform: scale(1.05);
- }
- /*set the title */
- .teams .carousel .card  .text
- {
-   font-size: 25px;
-   font-weight: 500;
-   margin: 10px 0 7px 0;
-   transition: .5s ease-in-out;
- }
- .teams .carousel .card  .text:hover
- {
-   color:darkgray
- }
- .teams .carousel .card img
- {
-   height: 150px;
-   width: 150px;
-   object-fit: cover;
-   border-radius: 50%;
-   border: 2px solid tomato;
- }
- .teams .carousel .card:hover img
- {
+}
+/*set the title */
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  transition: 0.5s ease-in-out;
+}
+.teams .carousel .card .text:hover {
+  color: darkgray;
+}
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid tomato;
+}
+.teams .carousel .card:hover img {
   border-color: crimson;
- }
-.owl-dots
-{
+}
+.owl-dots {
   text-align: center;
   margin-top: 20px;
 }
-.owl-dot
-{
+.owl-dot {
   height: 13px;
   width: 13px;
   margin: 0 5px;
   background: tomato;
-  outline: none!important;
+  outline: none !important;
   border-radius: 50%;
-  border:2px solid rgba(255, 99, 71, 0.747)!important;
-
+  border: 2px solid rgba(255, 99, 71, 0.747) !important;
 }
-.owl-dot.active
-{
+.owl-dot.active {
   width: 35px;
   border-radius: 14px;
 }
 .owl-dot.active,
-.owl-dot:hover
-{
-  background: rgba(255, 99, 71, 0.781)!important;
+.owl-dot:hover {
+  background: rgba(255, 99, 71, 0.781) !important;
   box-shadow: 2px 3px 3px 3px rgba(255, 99, 71, 0.308);
+}
+/*contact section styling*/
+.contact .title::after {
+  content: "get in touch";
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 10px 20px;
+}
+.contact .contact-content .left {
+  background: transparent;
+  border-radius: 9px;
+  transition: all 0.5s ease;
+}
+.contact .contact-content .left:hover {
+  box-shadow: 3px 3px 4px 5px rgba(0, 0, 0, 0.438);
+  background: rgba(64, 224, 208, 0.253);
+  transform: scale(1.06);
+}
+
+.contact .contact-content .left p {
+  padding: 20px 10px;
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .left .icons .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  margin-left: 8px;
+  font-size: 25px;
+  color: rgba(255, 99, 71, 0.774);
+}
+.contact .contact-content .info .head {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.contact .contact-content .info .head span {
+  color: tomato;
+}
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact .right .textarea {
+  height: 80px;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .email {
+  margin-left: 10px;
+}
+.contact .right form .textarea textarea {
+  padding: 10px;
+  margin-left: -10px;
+  resize: none;
+}
+.contact .right form .textarea textarea,
+.contact .right form .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightsalmon;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.contact .right form .button {
+  margin-top: 20px;
+  height: 47px;
+  width: 100%;
+}
+.contact .right form .button button {
+  width: 30%;
+  height: 100%;
+  border: 1px tomato solid;
+  background: rgba(220, 20, 60, 0.411);
+  outline: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all ease 0.6s;
+}
+
+.contact .right form .button button:hover {
+  transform: translatex(2%);
+  box-shadow: 3px 4px 5px 5px rgba(0, 0, 0, 0.171);
+  background: rgba(255, 99, 71, 0.788);
+  color: antiquewhite;
+  cursor: pointer;
 }
 
 /*responsice media query menu button*/
@@ -547,7 +648,8 @@ section .title::after {
   .services .serv-content .card {
     width: calc(70% - 10px);
   }
-  .skills .skills-content .column {
+  .skills .skills-content .column,
+  .contact .contact-content .column {
     width: 100%;
     margin-bottom: 23px;
   }
