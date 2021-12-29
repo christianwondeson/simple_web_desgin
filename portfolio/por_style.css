@@ -5,6 +5,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+/*enable our hypertext transition smooth*/
+html {
+  scroll-behavior: smooth;
+}
 /*for setting our navbar size and position*/
 .max-width {
   max-width: 1300px;
@@ -51,6 +56,7 @@
 }
 /* styling our list font color */
 .navbar .menu li a {
+  display: block;
   color: azure;
   font-size: 18px;
   font-weight: 500;
@@ -115,7 +121,7 @@
   margin: 20px;
   padding: 3px 3px;
   outline: none;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 0.5s ease;
 }
 .home .home-content a span {
@@ -139,7 +145,8 @@ section {
 .services,
 .skills,
 .teams,
-.contact {
+.contact,
+footer {
   font-family: "poppins", sans-serif;
 }
 .services .serv-content,
@@ -541,6 +548,25 @@ section .title::after {
   background: rgba(255, 99, 71, 0.788);
   color: antiquewhite;
   cursor: pointer;
+}
+footer {
+  background: transparent;
+  padding: 20px 23px;
+  color: rgba(0, 0, 0, 0.411);
+  transition: 0.5s all ease-in-out;
+}
+footer:hover {
+  background: #111;
+  color: antiquewhite;
+}
+footer span a {
+  color: rgba(255, 99, 71, 0.548);
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+footer span a:hover {
+  cursor: pointer;
+  color: crimson;
 }
 
 /*responsice media query menu button*/
