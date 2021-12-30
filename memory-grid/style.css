@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    background:rgba(119, 136, 153, 0.959);
+}
+.score
+{
+    margin: 10px auto;
+    padding: 10px 10px;
+    font-family: 'Rock 3D' ,sans-serif;
+    font-weight: 900px;
+    font-size: 40px;
+    background:rgba(238, 232, 170, 0.486);
+    object-fit: cover;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: all 0.7s ease;
+}
+.score:hover
+{
+    color:rgba(100, 148, 237, 0.795);
+    cursor: pointer;
+}
+.span-score
+{
+    color: rgba(255, 99, 71, 0.671);
+    background: transparent;
+}
+#result
+{
+    background: transparent;
+    font-size: 30px;
+}
+.dot
+{
+    background: transparent;
+    color:rgb(155, 181, 182);
+}
+.grid
+{
+    display: flex;
+    /*flex-wrap will display items in multiple line (row ,column)*/
+    flex-wrap:wrap;
+    /*since this image is 100x100 */
+    height: 300px;
+    width: 400px;
+    border: rgba(255, 0, 0, 0.555) solid 1px;
+    margin: 20px auto;
+   
+}
