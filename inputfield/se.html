@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="se.css" />
+  </head>
+  <script defer src="link.js"></script>
+  <body>
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+        <div class="input-group">
+          <label for="">Full Name</label>
+          <input
+            type="text"
+            placeholder="enter your name"
+            id="contact-name"
+            onkeyup="validname()"
+          />
+          <span id="nameerror"></span>
+        </div>
+        <div class="input-group">
+          <label for="">phone No.</label>
+          <input type="tel" placeholder="123 456 789" />
+          <span id="phoneerror"></span>
+        </div>
+        <div class="input-group">
+          <label for="">Email</label>
+          <input type="email" name="" id="" placeholder="enter your email" />
+          <span id="emailerror"></span>
+        </div>
+        <div class="input-group">
+          <label for="">message</label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="enter message"
+          ></textarea>
+          <span id="messageerror"></span>
+        </div>
+        <button>submit</button>
+        <span id="submiterror"></span>
+      </form>
+    </div>
+  </body>
+</html>
